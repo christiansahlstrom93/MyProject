@@ -1,10 +1,10 @@
 package project.alpha.projecta;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 
 
-public class Settings extends ActionBarActivity {
+public class Settings extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
