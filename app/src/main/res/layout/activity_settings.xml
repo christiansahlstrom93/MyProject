@@ -2,7 +2,46 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="project.alpha.projecta.Settings"
-    android:background="@drawable/settings"
+    android:background="@drawable/settingsbild"
     android:id="@+id/settingsLayout">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/imageView10"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/textView8">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:background="@drawable/shadow"
+            android:padding="1dp"
+            android:textSize="17sp"
+            android:id="@+id/textView7" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/imageView10"
+        android:src="@drawable/utv"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:src="@drawable/headline"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
