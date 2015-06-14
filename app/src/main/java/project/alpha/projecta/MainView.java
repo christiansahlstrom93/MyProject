@@ -182,8 +182,6 @@ public class MainView extends Fragment implements MathListener {
                             bankInfo.add(bankItems);
                             adapter.notifyDataSetChanged();
 
-                            final Bitmap b = bitmap;
-
                             bankList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                                 @Override
                                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -227,7 +225,7 @@ public class MainView extends Fragment implements MathListener {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getActivity());
         alertDialogBuilder
                 .setMessage(title)
-                .setCancelable(false)
+
                 .setPositiveButton("Besök lokalt",new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog,int id) {
                         showLocalWebPage(hPage);
@@ -248,7 +246,6 @@ public class MainView extends Fragment implements MathListener {
     void showPd() {
         this.pd = new ProgressDialog(getActivity());
         this.pd.setMessage("Laddar data");
-        this.pd.setCancelable(false);
         this.pd.show();
     }
 
@@ -378,7 +375,6 @@ public class MainView extends Fragment implements MathListener {
                         dialog.cancel();
                     }
                 });
-        alert.setCancelable(false);
         alert.show();
 
     }
