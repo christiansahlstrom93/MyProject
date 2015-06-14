@@ -71,7 +71,6 @@ public class MainView extends Fragment implements MathListener {
         DownloadFilesTask dft = new DownloadFilesTask();
         showPd();
         dft.execute();
-
         return view;
     }
 
