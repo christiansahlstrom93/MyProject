@@ -32,6 +32,7 @@ public class GraphFragment extends Fragment {
         v = inflater.inflate(R.layout.graphicalview, container, false);
         instance = this;
         mAct = getActivity();
+
         return v;
     }
 
