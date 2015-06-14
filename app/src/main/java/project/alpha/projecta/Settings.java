@@ -28,13 +28,13 @@ public class Settings extends Activity {
     }
 
     void fillRoman() {
-        roman = "Cashnet är framtaget för att jämföra bankers sparkonto och hjälpa privatpersoner och företag att hitta den bästa sparformen.\n\n" +
+        roman = "\nCashnet är framtaget för att jämföra bankers sparkonto och hjälpa privatpersoner och företag att hitta den bästa sparformen.\n\n" +
                 "I dagens läge med väldigt låg ränta på dem flesta håll så kan det bli svårt att få ut det bästa av sitt sparande." +
                 " Cashnet är utrustad med algoritmer som tar fram och jämför räntor hos storbanker och även dem mindre aktörerna på marknaden just för att DU ska kunna få så bra ränta som möjligt.\n\n" +
                 "" +
                 "Välj i listan bland alla våra banker och jämför deras konton sinsemellan för att hitta just det kontot som passar dig. Fyll i hur mycket och hur länge du vill spara och få fram exakt hur mycket tillväxt du får av just det valda kontot." +
                 "" +
-                "";
+                "\n\n";
     }
 
     @Override
