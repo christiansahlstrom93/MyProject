@@ -52,6 +52,7 @@ public class MainView extends Fragment implements MathListener {
     List<String> homepageInCorrectOrder = new ArrayList<>();
     List<Boolean> hasWar = new ArrayList<>();
 
+
     CustomListAdapter adapter;
     View view;
     ProgressDialog pd;
