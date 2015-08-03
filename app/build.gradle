@@ -32,9 +32,9 @@ dependencies {
 dependencies:copy {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
-    compile 'it.neokree:MaterialTabs:0.11'
     compile files('libs/mpandroidchartlibrary-2-1-0.jar')
-    compile files('libs/volley.jar')
+    compile files('facebook')
     compile files('libs/mysql-connector-java-5.1.34-bin.jar')
     compile files('libs/mysql-connector-java-5.1.26-bin.jar')
+    compile files('hej')
 }
