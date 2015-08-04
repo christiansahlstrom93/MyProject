@@ -1,6 +1,18 @@
 apply plugin: 'com.android.application'
 
 android {
+
+dependencies:hej {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile files('libs/mpandroidchartlibrary-2-1-0.jar')
+    compile files('facebook')
+    compile files('libs/mysql-connector-java-5.1.34-bin.jar')
+    compile files('libs/mysql-connector-java-5.1.26-bin.jar')
+    compile files('hej')
+}
+
+
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
 
@@ -9,11 +21,13 @@ android {
         minSdkVersion 16
         targetSdkVersion 21
         versionCode 1
+        type: test
         versionName "1.0"
     }
     buildTypes {
         release {
             minifyEnabled false
+            internetEnable true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -29,7 +43,7 @@ dependencies {
     compile files('libs/mysql-connector-java-5.1.26-bin.jar')
 }
 
-dependencies:copy {
+dependencies:jar {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile files('libs/mpandroidchartlibrary-2-1-0.jar')
